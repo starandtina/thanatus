@@ -1,8 +1,8 @@
-portal
+Thanatus
 ======
-This is the front end for DBaaS. 
+Thanatus front-end practices based on AngularJS.
 
-[Quick Start](https://github.com/starandtina/portal/issues/2) is the document that could help you get it up and running quickly. If wanna know more the ideas behind the scene please refer to [Frontend Framework Proposal](https://github.com/starandtina/portal/issues/1).
+[Quick Start](http://starandtina.github.io/front-end/javascript/2014/11/27/portal-frontend-framework-quick-start/) is the document that could help you get it up and running quickly. If you wanna know more the ideas behind the scene please refer to [Frontend Framework Proposal](http://starandtina.github.io/front-end/javascript/2014/11/27/portal-frontend-framework-proposal/).
 
 # Install
 
@@ -24,8 +24,6 @@ Currently, the build files could be found in the __dist__ directory.
 # Test
 
     npm test
-
-Please refer to [Testing Proposal](https://github.com/starandtina/portal/issues/3) for detailed info.
 
 # Documentation
 

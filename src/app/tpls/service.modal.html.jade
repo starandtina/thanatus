@@ -1,0 +1,11 @@
+.modal-header
+  .modal-title Modal Title
+.modal-body Modal
+  ul
+    li(ng-repeat='item in items')
+      a(ng-click='selected.item = item') {{item}}
+  span Selected:
+    b {{selected.item}}
+.modal-footer
+  button.btn.btn-default(ng-click='ok()') OK
+  button.btn.btn-default(ng-click='cancel()') Cancel

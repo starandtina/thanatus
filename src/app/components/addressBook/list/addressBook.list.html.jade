@@ -1,0 +1,28 @@
+.active-header
+  .active-header-actions.pull-right
+    button.btn.btn-info.create-address(ng-click='create()') {{i18n('Create Address')}}
+  h2.active-header-title {{i18n('My Address Catalog')}}
+.address-catalog
+  table.table.table-hover
+    thead
+      tr
+        th
+          a(href='', ng-click="predicate = 'id'; reverse=!reverse") #
+        th
+          a(href='', ng-click="predicate = 'name'; reverse=!reverse") {{i18n('Name')}}
+        th
+          a(href='', ng-click="predicate = 'address'; reverse=!reverse") {{i18n('Address')}}
+        th
+    tbody
+      tr.address-item(ng-repeat='resource in items | orderBy:predicate:reverse')
+        td {{resource.id}}
+        td {{resource.name}}
+        td {{resource.address}}
+        td.tar
+          a.btn.btn-primary.mr5(ng-click='edit(resource)') {{i18n('Edit')}}
+          a.btn.btn-danger(ng-click='delete(resource)') {{i18n('Delete')}}
+
+pagination.pagination-lg(total-items='totalItems', items-per-page='itemsPerPage', ng-model='currentPage', num-pages='numPages', ng-change='pageChanged()')
+pre 
+  | Page: {{currentPage}} / {{numPages}}
+  | TotalItems: {{totalItems}}

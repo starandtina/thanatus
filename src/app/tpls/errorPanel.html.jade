@@ -1,0 +1,6 @@
+.error-panel.alert.alert-danger.alert-dismissible(ng-show='errorMessage' role='alert')
+  i.glyphicon.glyphicon-warning-sign
+  button.close(type='button' ng-click='hide()')
+    span(aria-hidden='true') &times;
+    span.sr-only Close
+  | {{errorMessage}}

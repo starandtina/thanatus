@@ -1,0 +1,18 @@
+h3(ng-hide='isEdit') {{i18n('Create Address')}}
+h3(ng-show='isEdit') {{i18n('Edit')}}
+  | {{resource.name}}
+form.form-horizontal(role='form')
+  .form-group
+    label.col-sm-2.control-label {{i18n('Name')}}
+    .col-sm-5
+      input.form-control(type='text', required, ng-model='resource.name' autofocus)
+  .form-group
+    label.col-sm-2.control-label {{i18n('Address')}}
+    .col-sm-5
+      input.form-control(type='text', ng-model='resource.address')
+  .form-group
+    .col-sm-offset-2.col-sm-5
+      button.btn.btn-success.mr5(type='submit', ng-click='save()') {{i18n('Save')}}
+      button.btn.btn-success(type='button', ng-click='back()') {{i18n('Back')}}
+  .form-group
+    pre {{resource}}

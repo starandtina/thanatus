@@ -1,0 +1,44 @@
+{
+  "browser": true,
+
+  "bitwise":false,
+  "curly": false,
+  "eqnull": true,
+  "globalstrict": true,
+  "devel": true,
+  "eqeqeq": true,
+  "forin": false,
+  "immed": true,
+  "supernew": true,
+  "expr": true,
+  "indent": 2,
+  "latedef": true,
+  "newcap": false,
+  "noarg": true,
+  "noempty": true,
+  "undef": true,
+  "boss": true,
+  "trailing": false,
+  "laxbreak": true,
+  "laxcomma": true,
+  "sub": true,
+  "unused": true,
+  "loopfunc": true,
+
+  "maxlen": 140,
+
+  "globals": {
+    "Backbone": true,
+    "$": true,
+    "_": true,
+    "Handlebars": true,
+    "active": true,
+    "define": true,
+    "module": true,
+    "require": true,
+    "requirejs": true,
+    "jQuery": true,
+    "Chromath": false,
+    "jsonPath": false
+  }
+}

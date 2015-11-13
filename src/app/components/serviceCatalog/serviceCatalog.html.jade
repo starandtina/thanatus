@@ -1,0 +1,22 @@
+.service-catalog-container
+  .service-catalog-header
+    .service-catalog-header-actions.pull-right
+      button.btn.btn-info.btn-xs {{i18n('Create Service')}}
+    h3.service-catalog-header-title {{i18n('All Services')}}
+  .service-catalog-content
+    .title-bar.clearfix
+      .tool-bar.pull-right
+        span.small.mr5 {{i18n('Order By')}}
+        select.form-control.order-select.mr5(ng-model='orderService')
+          option(value='name') {{i18n('Name')}}
+          option(value='description') {{i18n('Description')}}
+          option(value='providerName') {{i18n('Provider Name')}}
+        span.glyphicon.glyphicon-th-list(ng-click='this.toggleViewType("list")')
+        span.glyphicon.glyphicon-th(ng-click='this.toggleViewType("thumb")')
+      span.text.pull-left {{i18n('Result Found:')}}
+        span.badge  {{filteredServices.length}}
+    .serivce-catalog-body.row(ng-class='viewType')
+      vm-component(ng-class='{"col-md-3": !isList, "col-md-12": isList}' ng-repeat='service in (filteredServices = (services | orderBy:orderService | filter:filterService.searchText | filter:filterService.filters))' type='this.getServiceViewType()' param='service')
+
+
+pre {{filterService}}

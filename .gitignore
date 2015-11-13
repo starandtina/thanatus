@@ -1,0 +1,9 @@
+src/bower_components
+node_modules
+dist
+tmp
+
+.DS_Store
+*.html.js
+npm-debug.log
+docs/coverage

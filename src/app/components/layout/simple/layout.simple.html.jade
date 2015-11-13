@@ -1,0 +1,14 @@
+.tmpst-header(role='menubar')
+  header.header#header
+  .container
+    .row
+      .tmpst-header-primary
+        a.tmpst-logo {{i18n('vCHS DBaaS')}}
+.tmpst-body(role='article')
+  .container
+    .tmpst-full-canvas
+      .row
+        vm-parser(descriptor='children.body')
+.tmpst-footer(role='menubar')
+  vm-parser(descriptor='children.footer' ng-if='children.header')
+  vm-component(type='"components/layout/footer"' ng-if='!children.header')

@@ -1,0 +1,4 @@
+define([
+  './dash',
+  './serviceModal'
+], function () {});

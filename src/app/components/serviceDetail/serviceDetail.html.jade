@@ -1,0 +1,42 @@
+.service-detail
+  .container-fluid.jumbotron
+    .row
+      .col-md-4
+        img(ng-src='{{service.icon}}' alt='...')
+      .col-md-8
+        h1 {{service.name}}
+        h4
+          .small
+            {{service.providerName}}
+          .small
+
+  h1 {{i18n('Product Description')}}
+  p
+    {{service.description}}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+
+
+  table.table.service-detail-table
+    tbody
+      tr
+        th.col-md-3 {{i18n('Latest Version')}}
+        td 7.8.2.007
+      tr
+        th {{i18n('Base Operating System')}}
+        td  Linux/Unix, Other 3.4.11
+      tr
+        th {{i18n('Delivery Method')}}
+        td 64-bit Machine Image (AMI) (Learn more)
+      tr
+        th {{i18n('Support')}}
+        td See details below
+      tr
+        th {{i18n('Highlights')}}
+        td Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam ferme
+
+.service-plans
+  h1 Serice Plans
+  .row
+    .col-xs-6.col-md-3(ng-repeat='plan in servicePlans')
+      .thumbnail
+        vm-component(type="'components/servicePlan'" param='plan')

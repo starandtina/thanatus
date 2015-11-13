@@ -1,0 +1,21 @@
+.my-services-container
+  .my-services-header
+    h3.my-services-header-title {{i18n('My Services')}}
+    span.tool-bar
+      span.glyphicon.glyphicon-th-list(ng-click='this.toggleViewType("list")')
+      span.glyphicon.glyphicon-th(ng-click='this.toggleViewType("thumb")')
+  .my-services-content
+    table.table.table-bordered
+      thead
+        tr
+          th(ng-click='predicate = "name"; reverse=!reverse') {{i18n('Services')}}
+          th {{i18n('Instances')}}
+          th {{i18n('Snapshots')}}
+          th {{i18n('Backups')}}
+      tbody
+        tr(ng-repeat='service in services | orderBy:predicate:reverse')
+          td {{service.name}}
+          td 2
+          td 3
+          td 4
+

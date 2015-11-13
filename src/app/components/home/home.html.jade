@@ -1,0 +1,35 @@
+.featured-services-container
+  h1 {{i18n('Featured Services')}}
+  .featured-services-slider.services-slider
+    .featured-service(ng-repeat='service in featuredServices' on-last-repeat)
+      vm-component(type="'components/service/thumb'" param='service')
+
+.category-container
+  h1 {{i18n('Category')}}
+  .row
+    .col-md-3
+      .category-item
+        h4 Infrastructure
+    .col-md-3
+      .category-item
+        h4 Deveoper Tools
+    .col-md-3
+      .category-item
+        h4 Application Management
+    .col-md-3
+      .category-item
+        h4 Middleware
+
+
+.pinned-services-container
+  h1 {{i18n('Pinned Services')}}
+  .pinned-services-slider.services-slider
+    .pinned-service(ng-repeat='service in pinnedServices' on-last-repeat)
+      vm-component(type="'components/service/thumb'" param='service')
+
+
+.purchased-services-container
+  h1 {{i18n('Purchased Services')}}
+  .purchased-services-slider.services-slider
+    .purchased-service(ng-repeat='service in purchasedServices' on-last-repeat)
+      vm-component(type="'components/service/thumb'" param='service')

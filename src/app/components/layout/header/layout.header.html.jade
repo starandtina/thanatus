@@ -1,0 +1,17 @@
+header.header#header
+  .container
+    .row
+      .tmpst-header-primary
+        a.tmpst-log {{i18n('vCHS DBaaS')}}
+        .search-container
+          input.form-control.search(type='search', placeholder='search', ng-model='filterService.searchText')
+      .tmpst-header-secondary
+        a.tmpst-header-link(href='/descriptors/home') {{i18n('Home')}}
+        a.tmpst-header-link(href='/descriptors/about') {{i18n('About')}}
+        a.tmpst-header-link(href='/descriptors/services') {{i18n('Sevices')}}
+        a.tmpst-header-link(href='/descriptors/addressBook') {{i18n('AddressBook')}}
+        a.tmpst-header-link kz
+        span(style='margin:0px 5px 0px 5px;color:#717171;') |
+        select.form-control.select-locale(ng-change='onLocaleChange()', ng-model='locale')
+          option(value='zh-cn') {{i18n('cn')}}
+          option(value='en-us') {{i18n('us')}}

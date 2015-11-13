@@ -1,0 +1,428 @@
+{
+  "sideBar": {
+    "categories": {
+      "infrastructure": [
+        {
+          "id": "sub category 1",
+          "name": "sub category 1",
+          "number": 12
+        },
+        {
+          "id": "sub category 2",
+          "name": "sub category 2",
+          "number": 2
+        }
+      ],
+      "Developer Tools": [
+        {
+          "id": "sub category 1",
+          "name": "sub category 1",
+          "number": 12
+        },
+        {
+          "id": "sub category 2",
+          "name": "sub category 2",
+          "number": 2
+        }
+      ],
+      "Application Management": [
+        {
+          "id": "sub category 1",
+          "name": "sub category 1",
+          "number": 12
+        },
+        {
+          "id": "sub category 2",
+          "name": "sub category 2",
+          "number": 2
+        }
+      ],
+      "Middleware": [
+        {
+          "id": "sub category 1",
+          "name": "sub category 1",
+          "number": 12
+        },
+        {
+          "id": "sub category 2",
+          "name": "sub category 2",
+          "number": 2
+        }
+      ],
+      "Operating Systems": [
+        {
+          "id": "sub category 1",
+          "name": "sub category 1",
+          "number": 12
+        },
+        {
+          "id": "sub category 2",
+          "name": "sub category 2",
+          "number": 2
+        }
+      ]
+    },
+    "regionList": [
+      {
+        "id": "west",
+        "name": "west"
+      },
+      {
+        "id": "east",
+        "name": "east"
+      }
+    ],
+    "navList": [
+      {
+        "id": "1",
+        "name": "Home",
+        "href": "/descriptors/home",
+        "iconFont": "glyphicon-home"
+      },
+      {
+        "id": "2",
+        "name": "All Services",
+        "href": "/descriptors/services",
+        "iconFont": "glyphicon-cloud"
+      },
+      {
+        "id": "3",
+        "name": "My Services",
+        "href": "/descriptors/my.services",
+        "iconFont": "glyphicon-cloud-download"
+      },
+      {
+        "id": "4",
+        "name": "AddressBook",
+        "href": "/descriptors/addressBook",
+        "iconFont": "glyphicon glyphicon-list-alt"
+      }
+    ]
+  },
+  "addressBooks": [
+    {
+      "name": "5",
+      "address": "5",
+      "id": 5
+    },
+    {
+      "name": "6",
+      "address": "6",
+      "id": 6
+    },
+    {
+      "name": "7",
+      "address": "7",
+      "id": 7
+    },
+    {
+      "name": "8",
+      "address": "8",
+      "id": 8
+    },
+    {
+      "name": "9",
+      "address": "9",
+      "id": 9
+    },
+    {
+      "name": "10",
+      "address": "10",
+      "id": 10
+    },
+    {
+      "name": "11",
+      "address": "11",
+      "id": 11
+    },
+    {
+      "address": "12",
+      "name": "12",
+      "id": 12
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name": "MSSQL Server",
+      "providerName": "Provider Name",
+      "icon": "/img/service.png",
+      "description": "featured/pinned/vcap/services service",
+      "region": "west",
+      "infrastructure": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Developer Tools": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Application Management": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Middleware": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Operating Systems": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "featured": true,
+      "pinned": true,
+      "vapp": true,
+      "services": true
+    },
+    {
+      "id": 2,
+      "name": "MSSQL Server 2012",
+      "icon": "/img/service.png",
+      "providerName": "Provider Name",
+      "description": "featured service",
+      "infrastructure": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Developer Tools": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Application Management": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Middleware": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Operating Systems": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "region": "west",
+      "featured": true,
+      "pinned": false,
+      "vapp": false,
+      "services": false
+    },
+    {
+      "id": 3,
+      "name": "MSSQL Server 2014",
+      "icon": "/img/service.png",
+      "providerName": "Provider Name",
+      "description": "featured/vapp/services service",
+      "region": "west",
+      "infrastructure": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Developer Tools": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Application Management": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Middleware": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Operating Systems": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "featured": true,
+      "pinned": false,
+      "vapp": true,
+      "services": true
+    },
+    {
+      "id": 4,
+      "name": "MySQL",
+      "icon": "/img/service.png",
+      "providerName": "Provider Name",
+      "description": "vcapp service",
+      "region": "west",
+      "infrastructure": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Developer Tools": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Application Management": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Middleware": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Operating Systems": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "featured": false,
+      "pinned": false,
+      "vapp": true,
+      "services": false
+    },
+    {
+      "id": 5,
+      "name": "MongoDB",
+      "icon": "/img/service.png",
+      "providerName": "Provider Name",
+      "description": "featured/vcapp service",
+      "region": "east",
+      "infrastructure": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Developer Tools": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Application Management": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Middleware": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Operating Systems": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "featured": true,
+      "pinned": false,
+      "vapp": true,
+      "services": false
+    },
+    {
+      "id": 6,
+      "name": "Redis",
+      "icon": "/img/service.png",
+      "providerName": "Provider Name",
+      "description": "services service",
+      "region": "west",
+      "infrastructure": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Developer Tools": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Application Management": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Middleware": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Operating Systems": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "featured": false,
+      "pinned": false,
+      "vapp": false,
+      "services": true
+    },
+    {
+      "id": 7,
+      "name": "Postgres",
+      "icon": "/img/service.png",
+      "providerName": "Provider Name",
+      "description": "pinned/vcapp service",
+      "region": "west",
+      "infrastructure": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Developer Tools": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Application Management": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Middleware": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Operating Systems": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "featured": true,
+      "pinned": true,
+      "vapp": true,
+      "services": false
+    },
+    {
+      "id": 8,
+      "name": "SQL Server 2000",
+      "icon": "/img/service.png",
+      "providerName": "Provider Name",
+      "description": "featured/vcapp service",
+      "region": "east",
+      "infrastructure": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Developer Tools": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Application Management": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Middleware": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "Operating Systems": [
+        "sub category 1",
+        "sub category 2"
+      ],
+      "featured": true,
+      "pinned": false,
+      "vapp": true,
+      "services": false
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "small",
+      "version": "version one",
+      "DB Size": "DB size",
+      "Storage": "Storage"
+    },
+    {
+      "name": "medium",
+      "version": "version one",
+      "DBSize": "DB size",
+      "Storage": "Storage"
+    },
+    {
+      "name": "large",
+      "version": "version one",
+      "DBSize": "DB Size",
+      "Storage": "Storage"
+    },
+    {
+      "name": "ex-large",
+      "version": "version one",
+      "DBSize": "DB Size",
+      "Storage": "Storage"
+    }
+  ]
+}

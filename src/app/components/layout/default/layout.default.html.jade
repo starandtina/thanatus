@@ -1,0 +1,14 @@
+.tmpst-header(role='menubar')
+  vm-parser(descriptor='children.header' ng-if='children.header')
+  vm-component(type='"components/layout/header"' ng-if='!children.header')
+.tmpst-body(role='article')
+  .container
+    .tmpst-full-canvas
+      .row
+        .col-md-3
+          vm-parser(descriptor='children.body[0]')
+        .col-md-9
+          vm-parser(descriptor='children.body[1]')
+.tmpst-footer(role='menubar')
+  vm-parser(descriptor='children.footer' ng-if='children.header')
+  vm-component(type='"components/layout/footer"' ng-if='!children.header')

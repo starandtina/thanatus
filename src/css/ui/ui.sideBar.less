@@ -1,0 +1,120 @@
+// Sidebar Component
+//
+// Markup:
+// 
+//
+// Styleguide 4.3
+
+.side-bar {
+  .list-group-item {
+    padding: 0;
+
+    .nav-href {
+      color: #555;
+
+      &:hover,
+      &:focus {
+        color: #555;
+        text-decoration: none;
+        background-color: #F5F5F5;
+      }
+    }
+
+    .active,
+    .active:hover,
+    .active:focus {
+      z-index: 2;
+      color: #FFF;
+      background-color: #428BCA;
+      border-color: #428BCA;
+    }
+
+    .text {
+      padding: 10px 15px;
+    }
+  }
+
+  .service-search-bar {
+    color: #333;
+    transition: all linear .2s;
+
+    .category-container {
+      .checkbox {
+        margin: 5px 0;
+      }
+
+      .category-list {
+        display: none;
+      }
+
+      .level-one {
+        cursor: pointer;
+        position: relative;
+        padding-left: 20px;
+
+        .ellipsis {
+          width: 194px;
+          color: #444;
+          font-size: 14px;
+        }
+
+        .category-text {
+          line-height: 26px;
+        }
+      }
+
+      .level-two {
+        padding-left: 25px;
+
+        .ellipsis {
+          width: 190px;
+          color: #555;
+          font-size: 12px;
+        }
+      }
+
+      .nav-open {
+        position: absolute;
+        left: 0px;
+        top: 11px;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+        border-width: 5px;
+        border-style: solid dashed dashed;
+        border-color: #868686 transparent transparent;
+        font-size: 0;
+        line-height: 0;
+        cursor: pointer;
+      }
+
+      .nav-close {
+        opacity: 1;
+        position: absolute;
+        left: 4px;
+        top: 8px;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+        border-width: 5px;
+        border-style: dashed dashed dashed solid;
+        border-color: transparent transparent transparent #868686;
+        font-size: 0;
+        line-height: 0;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .service-search-bar.ng-hide-remove.ng-hide-remove-active {
+    opacity: 1;
+  }
+
+  .service-search-bar.ng-hide {
+    opacity: 0;
+  }
+
+  .service-search-bar.ng-hide-add.ng-hide-add-active {
+    opacity: 0;
+  }
+}

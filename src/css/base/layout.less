@@ -1,0 +1,79 @@
+// Layout Rules
+//
+// Generally, a Layout style only has a single selector: a single ID or class name.
+//
+// Styleguide 3
+
+.tmpst-header {
+  height: 50px;
+  padding-top: 5px;
+  border-bottom: 1px solid #CCC;
+}
+
+.tmpst-header .tmpst-header-primary {
+  position: relative;
+  left: 20px;
+  float: left;
+  .search-container {
+    display: inline-block;
+    width: 400px;
+    margin: 0 10px;
+  }
+}
+
+.tmpst-header .tmpst-header-primary .tmpst-logo {
+  display: inline-block;
+  width: 108px;
+  height: 17px;
+  margin-top: 11px;
+  text-decoration: none;
+  background: url('');
+  background-repeat: no-repeat;
+}
+
+
+.tmpst-header .tmpst-header-secondary {
+  text-align: right;
+  .select-locale {
+    display: inline-block;
+    width: 60px;
+  }
+}
+
+.tmpst-header .tmpst-header-secondary .tmpst-header-link {
+  font-size: 14px;
+  display: inline-block;
+  padding: 7px 10px 8px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #717171;
+  border: solid transparent 1px;
+  border-bottom: none;
+}
+
+
+.tmpst-header .tmpst-header-secondary .tmpst-header-link:last-of-type {
+  padding-right: 0;
+}
+
+.tmpst-header .tmpst-header-secondary .tmpst-header-link:hover {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #333;
+}
+
+#footer {
+  margin: 50px 0;
+  text-align: center;
+  color: Gray;
+  a {
+    margin: 0 5px;
+    color: Gray;
+  }
+}

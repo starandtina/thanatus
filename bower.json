@@ -1,0 +1,41 @@
+{
+  "name": "thanatus",
+  "version": "1.0.0",
+  "authors": [
+    "starandtina <kandmforever@126.com> (http://github.com/starandtina/)"
+  ],
+  "description": "Thanatus front-end practices based on AngularJS",
+  "keywords": [
+    "AngularJS",
+    "thanatus",
+    "Front End"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/starandtina/thanatus",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.19",
+    "angular-resource": "~1.2.19",
+    "angular-route": "~1.2.19",
+    "angular-strap": "~2.0.3",
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.2.0",
+    "requirejs": "~2.1.14",
+    "lodash": "~2.4.1",
+    "moment": "~2.7.0",
+    "angular-cookies": "~1.2.19",
+    "angular-sanitize": "~1.2.19",
+    "angular-bootstrap": "~0.11.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.19",
+    "checklist-model": "~0.1.3"
+  }
+}

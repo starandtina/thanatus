@@ -1,0 +1,3 @@
+define([
+  './dash'
+], function () {});

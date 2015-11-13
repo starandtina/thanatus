@@ -1,0 +1,48 @@
+.side-bar.list-group
+  .list-group-item(ng-repeat='nav in sideBar.navList')
+    a.nav-href(href='{{nav.href}}')
+      .text(ng-class='{active: currentNavId == nav.id}' ng-click='onClickNav($event, nav)')
+        i(class='glyphicon {{nav.iconFont}}') 
+        | {{i18n(nav.name)}}
+    .service-search-bar(ng-show='currentNavId == servicesNavId' ng-if='nav.id == servicesNavId')
+      .panel.panel-search-bar
+        .panel-heading
+          .panel-title {{i18n('Search Options')}}
+        .panel-body
+          select.form-control.region-list(ng-model='filterService.filters.region')
+            option(value='')
+              | {{i18n('all')}}
+            option(ng-repeat='option in sideBar.regionList' value='{{option.id}}')
+              | {{i18n(option.name)}}
+          hr.hr
+          .service-catalog-list
+            .checkbox
+              label
+                input(type='checkbox' ng-model='filterService.filters.featured' ng-false-value='')
+                span {{i18n('Featured Services')}}
+            .checkbox
+              label
+                input(type='checkbox' ng-model='filterService.filters.pinned' ng-false-value='')
+                span {{i18n('Pinned Services')}}
+            .checkbox
+              label
+                input(type='checkbox' ng-model='filterService.filters.vapp' ng-false-value='')
+                span {{i18n('vApp')}}
+            .checkbox
+              label
+                input(type='checkbox' ng-model='filterService.filters.services' ng-false-value='') 
+                span {{i18n('Services')}}
+          hr.hr
+          h3
+            .small {{i18n('Categories')}}
+          ul.category-container
+            li(ng-repeat='(name, category) in sideBar.categories')
+              .level-one(ng-click='toggle($event)')
+                span.nav-close
+                span.category-text {{i18n(name)}}
+              .category-list
+                .level-two.checkbox(ng-repeat='item in category')
+                  .checkbox
+                    label
+                      input(type='checkbox' checklist-model='filterService.filters[name]' checklist-value='item.id' ng-click='onChange($event, item, name)') 
+                      span {{i18n(item.name)}} ({{item.number}})
